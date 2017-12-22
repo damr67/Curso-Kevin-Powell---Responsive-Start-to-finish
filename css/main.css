@@ -364,7 +364,8 @@ th {
   box-sizing: border-box; }
 
 body {
-  color: #048ca8; }
+  color: #048ca8;
+  text-align: center; }
 
 img {
   max-width: 100%;
@@ -410,7 +411,19 @@ h2 {
 .grid {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+.col {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%; }
+
+.col--full {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%; }
 
 .main-nav {
   background: #d31869;
@@ -530,6 +543,16 @@ h2 {
 
 .hero-img {
   display: none; }
+
+.sales-points {
+  padding: 10vh 0; }
+
+.sales-point {
+  margin-bottom: 2.5em; }
+  .sales-point:first-of-type {
+    margin-top: 1.5em; }
+  .sales-point:last-child {
+    margin-bottom: 0; }
 
 .btn {
   display: inline-block;
