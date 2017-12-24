@@ -22,6 +22,7 @@ h2
 	font-weight: $font-black
 	span	
 		font-weight: $font-light
+	line-height: .9
 
 .title-box
 	background: $accent
@@ -37,6 +38,19 @@ h2
 		padding-top: 6em
 		@media (min-width: 495px)
 			padding-top: 8em
+
+.title-footer
+	text-transform: uppercase
+	letter-spacing: 3px
+	line-hieght: 1
+
+	&::before, &::after
+		content: ''
+		display: block
+		height: 1px
+		background: $text-inverse
+		opacity: 0.25
+		margin: .75em 0
 
 .text-intro
 	font-size: 1.2rem
